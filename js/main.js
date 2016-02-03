@@ -118,7 +118,7 @@
 	------------------------------------------------------ */
 
 	// Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-	var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
+	var mailChimpURL = ''
 
 
 	$('#mc-form').ajaxChimp({
@@ -393,5 +393,11 @@
 	map.controls[google.maps.ControlPosition.TOP_RIGHT].push(zoomControlDiv);
 
 
+    // Random Background
+    var image = ["launching", "gagarin", "team-nasa", "theorizing", "training"],
+    randomImage = Math.floor((Math.random() * 5)),
+
+    background = 'url(/images/' + image[randomImage] + '.jpg),radial-gradient(1400px at 500px 50%, rgb(22, 45, 93) 0%, rgb(14, 75, 104) 100%)';
+    $("html").css("background", background);
 
 })(jQuery);
