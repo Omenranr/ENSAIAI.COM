@@ -394,10 +394,12 @@
 
 
     // Random Background
+    /*
     var image = ["launching", "gagarin", "team-nasa", "theorizing", "training"],
     randomImage = Math.floor((Math.random() * 5)),
 
     background = 'url(/images/' + image[randomImage] + '.jpg),radial-gradient(1400px at 500px 50%, rgb(22, 45, 93) 0%, rgb(14, 75, 104) 100%)';
     $("html").css("background", background);
+    */
 
 })(jQuery);

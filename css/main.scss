@@ -47,17 +47,18 @@ body {
 }
 
 html {
-	background-image: url("/images/gagarin.jpg"),radial-gradient(1400px at 500px 50%, rgb(22, 45, 93) 0%, rgb(14, 75, 104) 100%);
+	background-image: url("/images/team-nasa.jpg"),radial-gradient(1400px at 500px 50%, rgb(22, 45, 93) 0%, rgb(14, 75, 104) 100%);
 	.bg-1{
 
 	}
 	position: relative;
-	background-position: center bottom;
+	background-position: center top;
     background-blend-mode: multiply;
     background-size: cover;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
+	background-repeat: no-repat;
 }
 
 body {
@@ -933,13 +934,25 @@ main .site-header .logo a {
 }
 
 .sponsorship{
+	text-align: center;
+	margin-bottom: 80px;
+	h2{
+		color: $yellow;
+	}
+	p{
+		font-size: 17px;
+	}
 	li{
 		display: inline-block;
 		text-align: center;
-		width: 24.5%;
+		width: 11.5%;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	img{
-		opacity: 0.5
+		opacity: 0.5;
+		width: 100px;
+		max-width: 100%;
 	}
 }
 
@@ -1468,21 +1481,19 @@ main .site-header .logo a {
 /* 07. =footer
 /* =================================================================== */
 footer {
+	background-color: darken($navy, 7%);
 	clear: both;
 	font: 12px/24px "montserrat-regular", sans-serif;
-	background: #000;
 	padding: 18px 30px;
-	color: #303030;
+	color: white;
 	width: 100%;
-	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: 999992;
 }
 
 footer a,
 footer a:visited {
-	color: #525252;
+	color: $yellow;
 }
 
 footer a:hover,
@@ -1496,6 +1507,7 @@ footer a:focus {
 	margin: 0;
 	padding: 0;
 	float: left;
+	opacity: 0.5;
 }
 
 .footer-copyright li {
