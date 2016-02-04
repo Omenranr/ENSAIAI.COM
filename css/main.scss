@@ -516,6 +516,7 @@ input[type="checkbox"] {
 ------------------------------------------ */
 main.row {
 	max-width: 700px;
+	margin-top: 2vh;
 }
 
 main {
@@ -529,9 +530,9 @@ main::after {
 }
 
 main h1{
-	font: 38px/1.2em "montserrat-bold", sans-serif;
+	font: 35px/1.1em "montserrat-bold", sans-serif !important;
 	color: $yellow;
-	margin-bottom: 12px;
+	margin-bottom: 0;
 	padding: 0;
 }
 main h2{
@@ -663,7 +664,7 @@ main .site-header .logo a {
 	width: 90%;
 	color: white;
 	text-align: center;
-	margin: 18px auto 0;
+	margin: 0.8rem auto;
 }
 
 #counter span {
@@ -678,7 +679,7 @@ main .site-header .logo a {
 	font: 11px/18px "montserrat-regular", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-top: 3px;
+	margin-top: 0;
 	display: block;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -749,7 +750,10 @@ main .site-header .logo a {
 #mc-signup {
 	clear: both;
 	width: 75%;
-	margin: 6px auto 30px;
+	margin: -1rem auto 30px;
+	p{
+		margin-bottom: 0.2rem;
+	}
 }
 
 #mc-signup input {
@@ -943,12 +947,16 @@ input:-webkit-autofill {
 
 .sponsorship{
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 	h2{
 		color: $yellow;
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
 	}
 	p{
+		margin-top: 0;
 		font-size: 17px;
+		font-size: 1.4rem;
 	}
 	li{
 		display: inline-block;
@@ -959,7 +967,7 @@ input:-webkit-autofill {
 	}
 	img{
 		opacity: 0.5;
-		width: 100px;
+		width: 50px;
 		max-width: 100%;
 	}
 }
@@ -1489,14 +1497,15 @@ input:-webkit-autofill {
 /* 07. =footer
 /* =================================================================== */
 footer {
-	background-color: darken($navy, 7%);
+	background-color: transparentize(darken($navy, 7%), 0.2);
 	clear: both;
 	font: 12px/24px "montserrat-regular", sans-serif;
-	padding: 18px 30px;
+	padding: 1rem 30px;
 	color: white;
 	width: 100%;
 	bottom: 0;
 	left: 0;
+	position: fixed;
 }
 
 footer a,
