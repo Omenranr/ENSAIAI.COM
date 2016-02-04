@@ -29,10 +29,10 @@
 	$('div#counter').countdown(finalDate)
    	.on('update.countdown', function(event) {
 
-   		$(this).html(event.strftime('<span>%D <em>days</em></span>' +
-   										 	 '<span>%H <em>hours</em></span>' +
-   										 	 '<span>%M <em>minutes</em></span>' +
-   										 	 '<span>%S <em>seconds</em></span>'));
+   		$(this).html(event.strftime('<span>%D <em>días</em></span>' +
+   									'<span>%H <em>horas</em></span>' +
+   									'<span>%M <em>minutos</em></span>' +
+   									'<span>%S <em>segundos</em></span>'));
 
    });
 
@@ -47,12 +47,12 @@
    ------------------------------------------------------- */
    $('.modal-toggles ul').on('click', 'a', function(e) {
 
-   	var html = $('html'),
-   		 main = $('main, footer'),
-   		 footer = $('footer'),
-          curMod = $(this).attr('href'),
-          modal = $(curMod),
-          modClose = modal.find('#modal-close');
+   	var html     = $('html'),
+   		main     = $('main, footer'),
+   		footer   = $('footer'),
+        curMod   = $(this).attr('href'),
+        modal    = $(curMod),
+        modClose = modal.find('#modal-close');
 
 		main.fadeOut(500, function(){
 			$('html,body').scrollTop(0);
@@ -118,7 +118,7 @@
 	------------------------------------------------------ */
 
 	// Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-	var mailChimpURL = ''
+	var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
 
 
 	$('#mc-form').ajaxChimp({
@@ -140,13 +140,13 @@
 	//  5: 'This email address looks fake or invalid. Please enter a real email address'
 
 	$.ajaxChimp.translations.es = {
-	  'submit': 'Submitting...',
-	  0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
-	  1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
-	  2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-	  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-	  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-	  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
+	  'Envíar': 'Enviando...',
+	  0: '<i class="fa fa-check"></i> Te acabamos de envíar un email de confirmación',
+	  1: '<i class="fa fa-warning"></i> Debes introducir una dirección de email válida.',
+	  2: '<i class="fa fa-warning"></i> El email introducido no es válido.',
+	  3: '<i class="fa fa-warning"></i> El email introducido no es válido.',
+	  4: '<i class="fa fa-warning"></i> El email introducido no es válido.',
+	  5: '<i class="fa fa-warning"></i> El email introducido no es válido.'
 	}
 
 	/*---------------------------------------------------- */
@@ -392,14 +392,10 @@
 	// insert the zoom div on the top right of the map
 	map.controls[google.maps.ControlPosition.TOP_RIGHT].push(zoomControlDiv);
 
-
     // Random Background
-    /*
     var image = ["launching", "gagarin", "team-nasa", "theorizing", "training"],
     randomImage = Math.floor((Math.random() * 5)),
-
     background = 'url(/images/' + image[randomImage] + '.jpg),radial-gradient(1400px at 500px 50%, rgb(22, 45, 93) 0%, rgb(14, 75, 104) 100%)';
     $("html").css("background", background);
-    */
 
 })(jQuery);

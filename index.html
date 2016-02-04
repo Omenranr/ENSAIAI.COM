@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js bg-02" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
 
 	<!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Startup Open Space Zaragoza 2016</title>
+    <title>Startup Open Space Zaragoza 2016</title>
    <meta name="description" content="">
    <meta name="author" content="">
 
@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="bg-0">
+<body>
 
    <!--[if lt IE 9]>
    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser.
@@ -47,7 +47,7 @@
 
             <header class="site-header">
                <div class="logo">
-               	<a href="index.html">Advent.</a>
+               	<a href="index.html">Cachirulo Valley</a>
                </div>
             </header>
 
@@ -55,45 +55,73 @@
 
                <h1>La cuenta atrás ha comenzado</h1>
 
-               <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</p> -->
-
                <hr>
 
                <div id="counter" class="group">
-                  <span>30 <em>days</em></span>
-                  <span>12 <em>hours</em></span>
-                  <span>50 <em>minutes</em></span>
-                  <span>33 <em>seconds</em></span>
+                  <span>30 <em>días</em></span>
+                  <span>12 <em>horas</em></span>
+                  <span>50 <em>minutos</em></span>
+                  <span>33 <em>segundos</em></span>
                </div>
+
+               <!-- MailChimp Signup Form -->
+               <div id="mc-signup" class="mc-signup">
+                    <p>Mantente informado, subscríbete a nuestra newsletter:</p>
+                  <form id="mc-form" class="group">
+               		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Correo electrónico..." required>
+                     <input type="submit" value="Envíar" name="subscribe" class="button">
+                     <label for="mce-EMAIL" class="subscribe-message"></label>
+                  </form>
+               </div>
+               <!-- /sign-up form -->
 
             </div><!-- /main-content form -->
 
-            <!-- MailChimp Signup Form -->
-            <div id="mc-signup" class="mc-signup">
-                <p>Si quieres mantenerte informado, subscríbete a nuestra newsletter:</p>
-               <form id="mc-form" class="group">
-                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Correo electrónico..." required>
-                  <input type="submit" value="Envíar" name="subscribe" class="button">
-                  <label for="mce-EMAIL" class="subscribe-message"></label>
-               </form>
-            </div>
-            <!-- /sign-up form -->
+
 
       </main>
 
    </div><!-- /content-wrap -->
 
 
-
-
- 	<!-- footer
+   <!-- modals
    =================================================== -->
-   <footer class="group">
-       <!-- sponsorship -->
-       <div class="sponsorship">
-           <h2>¿Quieres patrocinar el SOSZ2016?</h2>
-           <p>Para recibir información sobre las condiciones del patrocinio  escríbenos a <a href="mailto:hola@cachirulovalley.com">hola@cachirulovalley.com</a></p>
-          <ul>
+   <section id="mod-map" >
+      <!-- Modal toggle -->
+      <div class="modal-toggle">
+         <a href="#" title="close" id="modal-close"><span>Close</span></a>
+      </div>
+      <div id="map-container"></div>
+
+      <div id="map-zoom-in"></div>
+	  <div id="map-zoom-out"></div>
+      <address>
+	      5th Avenue, Fort Bonifacio <br>
+			Taguig, Metro Manila, Philippines
+      </address>
+   </section>
+
+
+   <!-- footer
+  =================================================== -->
+  <footer class="group">
+      <!-- sponsorship -->
+      <div class="sponsorship">
+          <h2>¿Quieres patrocinar el SOSZ2016?</h2>
+          <p>Para recibir información sobre las condiciones del patrocinio  escríbenos a <a href="mailto:hola@cachirulovalley.com">hola@cachirulovalley.com</a></p>
+         <ul>
+              <li class="about-us">
+                  <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
+              </li>
+              <li class="about-us">
+                  <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
+              </li>
+              <li class="about-us">
+                  <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
+              </li>
+              <li class="about-us">
+                  <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
+              </li>
                <li class="about-us">
                    <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
                </li>
@@ -106,36 +134,24 @@
                <li class="about-us">
                    <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
                </li>
-                <li class="about-us">
-                    <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
-                </li>
-                <li class="about-us">
-                    <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
-                </li>
-                <li class="about-us">
-                    <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
-                </li>
-                <li class="about-us">
-                    <img src="/images/dummy-sponsor.png" alt="Sponsor 1" width="132" height="132">
-                </li>
-          </ul>
+         </ul>
+      </div>
+      <!-- / sponsorship -->
+       <ul class="footer-social">
+           <li>Organiza <a title="Styleshout" href="http://www.cachirulovalley.com/" target="_blank">Cachirulo Valley</a></li>
+           <li><a href="https://twitter.com/cachirulovalley" target="_blank"><i class="fa fa-twitter"></i></a></li>
+       </ul>
+
+       <ul class="footer-copyright">
+        <li>&copy; Copyright 2015 Advent - Template by <a title="Styleshout" href="http://www.styleshout.com/" target="_blank">Styleshout</a></li>
+     </ul>
+
+  </footer>
+
+  <div id="preloader">
+       <div id="loader">
        </div>
-       <!-- / sponsorship -->
-     	<ul class="footer-social">
-            <li>Organiza <a title="Styleshout" href="http://www.cachirulovalley.com/" target="_blank">Cachirulo Valley</a></li>
-            <li><a href="https://twitter.com/cachirulovalley" target="_blank"><i class="fa fa-twitter"></i></a></li>
-     	</ul>
-
-     	<ul class="footer-copyright">
-         <li>&copy; Copyright 2015 Advent - Template by <a title="Styleshout" href="http://www.styleshout.com/" target="_blank">Styleshout</a></li>
-      </ul>
-
-   </footer>
-
-   <div id="preloader">
-    	<div id="loader">
-     	</div>
-   </div>
+  </div>
 
 <!-- Script
 =================================================== -->
