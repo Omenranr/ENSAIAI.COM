@@ -539,22 +539,17 @@ main .site-header {
   position: relative;
 }
 
-main .site-header .date {
-  position: absolute;
-  top: 6rem;
-  right: 15rem;
-  max-width: 100%;
-}
-
-main .site-header .logo {
-  display: inline-block;
+main .site-header {
+  /*display: inline-block;*/
   vertical-align: middle;
   margin: 0 0 36px 0;
   padding: 0;
+  vertical-align:middle;
 }
 
-main .site-header .logo a {
-  display: block;
+main .site-header a.logo {
+  display: inline-block;
+  vertical-align:middle;
   margin: 0;
   padding: 0;
   border: none;
@@ -566,6 +561,22 @@ main .site-header .logo a {
   height: 156px;
   background: url("../images/logo/logo-complete-small@2x.png") no-repeat;
   background-size: contain;
+}
+
+main .site-header a.date {
+  display: inline-block;
+  vertical-align:middle;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: url("../images/icon-date.png") no-repeat;
+  background-size: contain;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  width: 72px;
+  height: 72px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -915,12 +926,12 @@ input:-webkit-autofill {
 
 .sponsorship {
   text-align: center;
-  margin-top: -200px !important;
-  padding-bottom: 100px;
+  /*margin-top: -200px !important;*/
+  /*padding-bottom: 100px;*/
   float: left;
   width: 100%;
-  position: absolute;
-  bottom: -70px;
+  /*position: absolute;*/
+  /*bottom: -70px;*/
 }
 
 .sponsorship h2 {
