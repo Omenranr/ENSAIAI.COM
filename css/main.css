@@ -4,7 +4,7 @@
 /*  url: styleshout.com
 /*  08-28-2015
 /*
-/*	 TOC:
+/*   TOC:
 /*  01. =webfonts and iconfonts
 /*  02. =document setup
 /*  03. =preloader
@@ -30,18 +30,6 @@
 html,
 body {
   height: 100%;
-}
-
-html {
-  background-image: url("/images/team-nasa.jpg"), radial-gradient(1400px at 500px 50%, #162d5d 0%, #0e4b68 100%);
-  position: relative;
-  background-position: center top;
-  background-blend-mode: multiply;
-  background-size: cover;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  background-size: cover !important;
-  background-repeat: no-repat;
 }
 
 body {
@@ -464,6 +452,17 @@ input[type="checkbox"] {
 #content-wrap {
   min-height: 100%;
   padding-top: 3%;
+}
+
+#content-wrap {
+  background-image: url("/images/team-nasa.jpg"), radial-gradient(1400px at 500px 50%, #162d5d 0%, #0e4b68 100%);
+  position: relative;
+  background-position: center top;
+  background-blend-mode: multiply;
+  background-size: cover !important;
+  background-repeat: no-repat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
 }
 
 @media only screen and (max-width: 900px) {
