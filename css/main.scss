@@ -554,6 +554,16 @@ main hr {
 	width: 100px;
 }
 
+main .site-header{
+	position: relative;
+
+	.date{
+		position: absolute;
+		top: 6rem;
+		right: 15rem;
+		max-width: 100%;
+	}
+}
 main .site-header .logo {
 	display: inline-block;
 	vertical-align: middle;
