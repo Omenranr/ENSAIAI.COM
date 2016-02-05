@@ -338,63 +338,64 @@
 	];
 
 	// map options
-	var map_options = {
 
-      	center: new google.maps.LatLng(latitude, longitude),
-      	zoom: 15,
-      	panControl: false,
-      	zoomControl: false,
-        	mapTypeControl: false,
-      	streetViewControl: false,
-      	mapTypeId: google.maps.MapTypeId.ROADMAP,
-      	scrollwheel: false,
-      	styles: style
-
-    	};
+	// var map_options = {
+    //
+    //   	center: new google.maps.LatLng(latitude, longitude),
+    //   	zoom: 15,
+    //   	panControl: false,
+    //   	zoomControl: false,
+    //     	mapTypeControl: false,
+    //   	streetViewControl: false,
+    //   	mapTypeId: google.maps.MapTypeId.ROADMAP,
+    //   	scrollwheel: false,
+    //   	styles: style
+    //
+    // 	};
 
    // inizialize the map
-	var map = new google.maps.Map(document.getElementById('map-container'), map_options);
+	//var map = new google.maps.Map(document.getElementById('map-container'), map_options);
 
 	// add a custom marker to the map
-	var marker = new google.maps.Marker({
-
-		 	position: new google.maps.LatLng(latitude, longitude),
-		 	map: map,
-		 	visible: true,
-		 	icon: marker_url
-
-		});
+	// var marker = new google.maps.Marker({
+    //
+	// 	 	position: new google.maps.LatLng(latitude, longitude),
+	// 	 	map: map,
+	// 	 	visible: true,
+	// 	 	icon: marker_url
+    //
+	// 	});
 
 	// add custom buttons for the zoom-in/zoom-out on the map
-	function CustomZoomControl(controlDiv, map) {
-
-		// grap the zoom elements from the DOM and insert them in the map
-	 	var controlUIzoomIn= document.getElementById('map-zoom-in'),
-		  	 controlUIzoomOut= document.getElementById('map-zoom-out');
-
-		controlDiv.appendChild(controlUIzoomIn);
-		controlDiv.appendChild(controlUIzoomOut);
-
-		// Setup the click event listeners and zoom-in or out according to the clicked element
-		google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
-			map.setZoom(map.getZoom()+1)
-		});
-		google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
-			map.setZoom(map.getZoom()-1)
-		});
-
-	}
-
-	var zoomControlDiv = document.createElement('div');
-	var zoomControl = new CustomZoomControl(zoomControlDiv, map);
-
-	// insert the zoom div on the top right of the map
-	map.controls[google.maps.ControlPosition.TOP_RIGHT].push(zoomControlDiv);
+	// function CustomZoomControl(controlDiv, map) {
+    //
+	// 	// grap the zoom elements from the DOM and insert them in the map
+	//  	var controlUIzoomIn= document.getElementById('map-zoom-in'),
+	// 	  	 controlUIzoomOut= document.getElementById('map-zoom-out');
+    //
+	// 	controlDiv.appendChild(controlUIzoomIn);
+	// 	controlDiv.appendChild(controlUIzoomOut);
+    //
+	// 	// Setup the click event listeners and zoom-in or out according to the clicked element
+	// 	google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+	// 		map.setZoom(map.getZoom()+1)
+	// 	});
+	// 	google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+	// 		map.setZoom(map.getZoom()-1)
+	// 	});
+    //
+	// }
+    //
+	// var zoomControlDiv = document.createElement('div');
+	// var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+    //
+	// // insert the zoom div on the top right of the map
+	// map.controls[google.maps.ControlPosition.TOP_RIGHT].push(zoomControlDiv);
 
     // Random Background
     var image = ["launching", "gagarin", "team-nasa", "theorizing", "training"],
     randomImage = Math.floor((Math.random() * 5)),
     background = 'url(/images/' + image[randomImage] + '.jpg),radial-gradient(1400px at 500px 50%, rgb(22, 45, 93) 0%, rgb(14, 75, 104) 100%)';
-    $("html").css("background", background);
+    $("#content-wrap").css("background", background);
 
 })(jQuery);
